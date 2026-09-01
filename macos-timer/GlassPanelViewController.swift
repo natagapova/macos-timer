@@ -16,16 +16,12 @@ final class GlassPanelViewController<Content: View>: NSViewController {
     }
 
     override func loadView() {
-        let cornerRadius = PanelLayout.cornerRadius
-
         effectView.material = .menu
         effectView.blendingMode = .behindWindow
         effectView.state = .followsWindowActiveState
         effectView.isEmphasized = false
         effectView.wantsLayer = true
-        effectView.layer?.cornerRadius = cornerRadius
-        effectView.layer?.cornerCurve = .continuous
-        effectView.layer?.masksToBounds = true
+        effectView.maskImage = { let image = NSImage(size: NSSize(width: PanelLayout.cornerRadius * 2 + 1, height: PanelLayout.cornerRadius * 2 + 1), flipped: false) { rect in NSColor.white.setFill(); NSBezierPath(roundedRect: rect, xRadius: PanelLayout.cornerRadius, yRadius: PanelLayout.cornerRadius).fill(); return true }; image.capInsets = NSEdgeInsets(top: PanelLayout.cornerRadius, left: PanelLayout.cornerRadius, bottom: PanelLayout.cornerRadius, right: PanelLayout.cornerRadius); image.resizingMode = .stretch; return image }()
 
         hostingView.translatesAutoresizingMaskIntoConstraints = false
 

@@ -36,7 +36,7 @@ struct PomodoroPresetEditorView: View {
         }
         .padding(16)
         .frame(width: 300)
-        .background(Color(white: 0.12))
+        .background(.regularMaterial)
     }
 
     private func minuteField(label: String, value: Binding<Int>, range: ClosedRange<Int>) -> some View {

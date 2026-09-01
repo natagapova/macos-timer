@@ -109,15 +109,11 @@ final class StatusBarController: NSObject {
     }
 
     private func configureTransparentWindow(for panel: NSPanel) {
-        let cornerRadius = PanelLayout.cornerRadius
-
         panel.isOpaque = false
         panel.backgroundColor = .clear
         panel.contentView?.wantsLayer = true
         panel.contentView?.layer?.backgroundColor = NSColor.clear.cgColor
-        panel.contentView?.layer?.cornerRadius = cornerRadius
-        panel.contentView?.layer?.cornerCurve = .continuous
-        panel.contentView?.layer?.masksToBounds = true
+        panel.contentView?.layer?.masksToBounds = false
 
         DispatchQueue.main.async {
             guard let window = panel.contentView?.window else { return }
@@ -125,9 +121,7 @@ final class StatusBarController: NSObject {
             window.backgroundColor = .clear
             window.hasShadow = true
             window.contentView?.wantsLayer = true
-            window.contentView?.layer?.cornerRadius = cornerRadius
-            window.contentView?.layer?.cornerCurve = .continuous
-            window.contentView?.layer?.masksToBounds = true
+            window.contentView?.layer?.masksToBounds = false
             window.contentView?.layer?.backgroundColor = NSColor.clear.cgColor
         }
     }

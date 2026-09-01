@@ -18,7 +18,7 @@ final class TimerFloatingPanel: NSPanel {
             defer: false
         )
 
-        self.contentViewController = contentViewController
+        self.contentView = contentViewController.view
         isOpaque = false
         backgroundColor = .clear
         hasShadow = true

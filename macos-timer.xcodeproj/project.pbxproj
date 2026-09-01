@@ -29,6 +29,7 @@
 		B1000000000000000000002D /* TomatoIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000002C /* TomatoIcon.swift */; };
 		B1000000000000000000002F /* CompletionSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000002E /* CompletionSound.swift */; };
 		B1000000000000000000004A /* pluck.wav in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000046 /* pluck.wav */; };
+		B2E8E4B630460127005CF7CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E8E4B530460127005CF7CD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,14 +49,15 @@
 		B1000000000000000000001D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B1000000000000000000001E /* RootPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPanelView.swift; sourceTree = "<group>"; };
 		B1000000000000000000001F /* PomodoroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroView.swift; sourceTree = "<group>"; };
-		B1000000000000000000002B /* PomodoroPresetEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroPresetEditorView.swift; sourceTree = "<group>"; };
 		B10000000000000000000021 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
 		B10000000000000000000022 /* PomodoroPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroPreset.swift; sourceTree = "<group>"; };
 		B10000000000000000000023 /* PomodoroStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroStore.swift; sourceTree = "<group>"; };
 		B10000000000000000000025 /* TimerButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButtonStyles.swift; sourceTree = "<group>"; };
+		B1000000000000000000002B /* PomodoroPresetEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroPresetEditorView.swift; sourceTree = "<group>"; };
 		B1000000000000000000002C /* TomatoIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoIcon.swift; sourceTree = "<group>"; };
 		B1000000000000000000002E /* CompletionSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionSound.swift; sourceTree = "<group>"; };
 		B10000000000000000000046 /* pluck.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pluck.wav; sourceTree = "<group>"; };
+		B2E8E4B530460127005CF7CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +69,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXResourcesBuildPhase section */
-		B10000000000000000000042 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1000000000000000000004A /* pluck.wav in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXGroup section */
 		B10000000000000000000030 = {
@@ -114,16 +105,9 @@
 				B1000000000000000000002E /* CompletionSound.swift */,
 				B10000000000000000000043 /* Sounds */,
 				B10000000000000000000014 /* Info.plist */,
+				B2E8E4B530460127005CF7CD /* Assets.xcassets */,
 			);
 			path = "macos-timer";
-			sourceTree = "<group>";
-		};
-		B10000000000000000000043 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				B10000000000000000000046 /* pluck.wav */,
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 		B10000000000000000000032 /* Products */ = {
@@ -132,6 +116,14 @@
 				B10000000000000000000010 /* macos-timer.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B10000000000000000000043 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000046 /* pluck.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +178,18 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B10000000000000000000042 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E8E4B630460127005CF7CD /* Assets.xcassets in Resources */,
+				B1000000000000000000004A /* pluck.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B10000000000000000000041 /* Sources */ = {
