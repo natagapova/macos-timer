@@ -6,10 +6,10 @@ timer screen inspired by [onigiri](https://apps.apple.com/us/app/onigiri-minimal
 
 ## install
 
-download the latest release, unzip, then in Terminal:
+download the latest release, unzip, move to Applications, then in Terminal:
 
 ```bash
-xattr -cr ~/Downloads/macos-timer.app
+xattr -cr /Applications/macos-timer.app
 ```
 
 open the app. it lives in the menu bar.
